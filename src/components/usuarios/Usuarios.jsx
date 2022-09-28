@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { obtenerUsuarios } from '../../services/UsuarioService'
 
 export default function Usuarios() {
-  return (
-    <div>Usuarios</div>
-  )
+
+    const listaUsuarios = async () => {
+        const { data } = await obtenerUsuarios()
+        console.log(data)
+    }
+
+    useEffect(() => {
+        listaUsuarios();
+    }, [])
+
+    return (
+        <div>Usuarios</div>
+    )
 }

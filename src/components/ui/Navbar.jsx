@@ -1,41 +1,59 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-export default function Navbar({title}) {
+export default function NavBar({ title }) {
     return (
-        <nav className="navbar navbar-expand-lg bg-light">
+        <nav className="navbar navbar-expand-lg bg-light shadow-sm rounded">
             <div className="container-fluid">
                 <Link
                     to='/'
-                    className='nav-brand'
+                    className='navbar-brand text-danger fs-3 fw-bold'
                     tabIndex={0}
-                    aria-label='Ir a inicio'
+                    aria-label='Ir a Inicio'
                 >
-                {title}
-                </Link>                
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    {title}
+                </Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="navbar-nav">
                         <NavLink
-                        to='/usuarios'
-                        tabIndex={1}
-                        className='nav-item'
-                        >                 
-                        Usuarios
+                            to='/tiposequipos'
+                            tabIndex={1}
+                            className="nav-item nav-link"
+                        >
+                            Tipos Equipos
                         </NavLink>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Marcas</a>
-                        </li>                
-                        <li className="nav-item">
-                            <a className="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
-                    <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                        <NavLink
+                            to='/estados'
+                            tabIndex={1}
+                            className="nav-item nav-link"
+                        >
+                            Estados
+                        </NavLink>
+                        <NavLink
+                            to='/usuarios'
+                            tabIndex={1}
+                            className="nav-item nav-link"
+                        >
+                            Usuarios
+                        </NavLink>
+                        <NavLink
+                            to='/marcas'
+                            tabIndex={1}
+                            className="nav-item nav-link"
+                        >
+                            Marcas
+                        </NavLink>
+                        <NavLink
+                            to='/inventarios'
+                            tabIndex={1}
+                            className="nav-item nav-link"
+                        >
+                            Inventarios
+                        </NavLink>
+                    </div>
                 </div>
             </div>
         </nav>

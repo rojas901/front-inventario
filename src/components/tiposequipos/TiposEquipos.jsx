@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { obtenerTiposEquipos } from '../../services/TipoEquipoService'
 
-export default function TiposEquipos() {
-  return (
-    <div>TiposEquipos</div>
-  )
+export default function TipoEquipos() {
+
+    const listaTipoEquipos = async () => {
+        const { data } = await obtenerTiposEquipos()
+        console.log(data)
+    }
+
+    useEffect(() => {
+        listaTipoEquipos();
+    }, [])
+
+    return (
+        <div>TipoEquipos</div>
+    )
 }
