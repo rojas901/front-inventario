@@ -48,7 +48,6 @@ export default function TipoEquipos() {
             console.log(e)
             setLoading(false)
         }
-
     }
 
     const handleChange = e => {
@@ -89,7 +88,6 @@ export default function TipoEquipos() {
             console.log(e)
             setError(true)
         }
-
     }
 
     const setTipoPorId = (e) => {
@@ -126,7 +124,7 @@ export default function TipoEquipos() {
                         <div className="modal-body">
                             <form onSubmit={editarTipoEquipo}>
                                 <div className="mb-3">
-                                    <label for="recipient-name" className="col-form-label">Nombre:</label>
+                                    <label htmlFor="recipient-name" className="col-form-label">Nombre:</label>
                                     <input
                                         type="text"
                                         className="form-control"
@@ -136,7 +134,7 @@ export default function TipoEquipos() {
                                         name="nombre"
                                     />
                                     <select
-                                        class="form-select"
+                                        className="form-select"
                                         aria-label="Default select example"
                                         name="estado"
                                         value={tipoEquipo.estado}

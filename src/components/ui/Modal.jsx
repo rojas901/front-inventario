@@ -27,15 +27,39 @@ export default function Modal({
             <div className="modal-body">
               <form onSubmit={guadarElement}>
                 <div className="mb-3">
-                  <label htmlFor="recipient-name" className="col-form-label">Nombre:</label>
-                  <input 
-                    type="text" 
-                    className="form-control" 
-                    id="recipient-name"
-                    onChange={handleChange}
-                    value={element.nombre}
-                    name="nombre"
-                  />
+                  {titulo !== 'Nuevo usuario' ? 
+                  (<>
+                    <label htmlFor="recipient-name" className="col-form-label">Nombre:</label>
+                    <input 
+                      type="text" 
+                      className="form-control" 
+                      id="recipient-name"
+                      onChange={handleChange}
+                      value={element.nombre}
+                      name="nombre"
+                    />
+                  </>) :
+                  (<>
+                    <label htmlFor="recipient-name" className="col-form-label">Nombre:</label>
+                    <input 
+                      type="text" 
+                      className="form-control" 
+                      id="recipient-name"
+                      onChange={handleChange}
+                      value={element.nombre}
+                      name="nombre"
+                    />
+                    <label htmlFor="recipient-email" className="col-form-label">Email:</label>
+                    <input 
+                      type="text" 
+                      className="form-control" 
+                      id="recipient-email"
+                      onChange={handleChange}
+                      value={element.email}
+                      name="email"
+                    />
+                  </>)
+                  }                  
                 </div>
                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 <button 
