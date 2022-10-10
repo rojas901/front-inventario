@@ -52,6 +52,7 @@ export default function Usuarios() {
     }
 
     const handleChange = e => {
+        console.log(e)
         setUsuario({
             ...usuario,
             [e.target.name]: e.target.value,
