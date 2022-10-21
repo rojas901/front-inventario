@@ -91,7 +91,7 @@ export default function Modal({
                       className="form-control"
                       id="recipient-name"
                       onChange={handleChange}
-                      value={element.nombre}
+                      value={element?.nombre}
                       name="nombre"
                     />
                     <label htmlFor="recipient-email" className="col-form-label">Email:</label>
@@ -100,7 +100,7 @@ export default function Modal({
                       className="form-control"
                       id="recipient-email"
                       onChange={handleChange}
-                      value={element.email}
+                      value={element?.email}
                       name="email"
                     />
                   </>)
@@ -112,7 +112,7 @@ export default function Modal({
                         className="form-control"
                         id="recipient-name"
                         onChange={handleChange}
-                        value={element.serial}
+                        value={element?.serial}
                         name="serial"
                       />
                       <label htmlFor="recipient-modelo" className="col-form-label">Modelo:</label>
@@ -121,7 +121,7 @@ export default function Modal({
                         className="form-control"
                         id="recipient-modelo"
                         onChange={handleChange}
-                        value={element.modelo}
+                        value={element?.modelo}
                         name="modelo"
                       />
                       <label htmlFor="recipient-descripcion" className="col-form-label">Descripcion:</label>
@@ -130,7 +130,7 @@ export default function Modal({
                         className="form-control"
                         id="recipient-descripcion"
                         onChange={handleChange}
-                        value={element.descripcion}
+                        value={element?.descripcion}
                         name="descripcion"
                       />
                       <label htmlFor="recipient-color" className="col-form-label">Color:</label>
@@ -139,7 +139,7 @@ export default function Modal({
                         className="form-control"
                         id="recipient-color"
                         onChange={handleChange}
-                        value={element.color}
+                        value={element?.color}
                         name="color"
                       />
                       <label htmlFor="recipient-fechaCompra" className="col-form-label">Fecha de compra:</label>
@@ -148,7 +148,7 @@ export default function Modal({
                         className="form-control"
                         id="recipient-fechaCompra"
                         onChange={handleChange}
-                        value={element.fechaCompra}
+                        value={element?.fechaCompra}
                         name="fechaCompra"
                       />
                       <label htmlFor="recipient-precio" className="col-form-label">Precio:</label>
@@ -157,7 +157,7 @@ export default function Modal({
                         className="form-control"
                         id="recipient-precio"
                         onChange={handleChange}
-                        value={element.precio}
+                        value={element?.precio}
                         name="precio"
                       />
                       <label htmlFor="recipient-usuario" className="col-form-label">Usuario:</label>
@@ -224,7 +224,7 @@ export default function Modal({
                         className="form-control"
                         id="recipient-name"
                         onChange={handleChange}
-                        value={element.nombre}
+                        value={element?.nombre}
                         name="nombre"
                       />
                     </>
