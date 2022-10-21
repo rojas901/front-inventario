@@ -155,7 +155,7 @@ export default function Estados() {
                                 <button
                                     type="submit"
                                     className="btn btn-primary"
-                                    disabled={estado.nombre.length <= 0}
+                                    disabled={estado?.nombre.length <= 0}
                                     data-bs-dismiss="modal"
                                 >
                                     Enviar

@@ -230,7 +230,7 @@ export default function TipoEquipos() {
                                 <button
                                     type="submit"
                                     className="btn btn-primary"
-                                    disabled={inventario.serial.length <= 0}
+                                    disabled={inventario?.serial.length <= 0}
                                     data-bs-dismiss="modal"
                                 >
                                     Enviar

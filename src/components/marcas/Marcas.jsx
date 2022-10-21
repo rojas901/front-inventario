@@ -155,7 +155,7 @@ export default function Marcas() {
                                 <button
                                     type="submit"
                                     className="btn btn-primary"
-                                    disabled={marca.nombre.length <= 0}
+                                    disabled={marca?.nombre.length <= 0}
                                     data-bs-dismiss="modal"
                                 >
                                     Enviar

@@ -155,7 +155,7 @@ export default function TipoEquipos() {
                                 <button
                                     type="submit"
                                     className="btn btn-primary"
-                                    disabled={tipoEquipo.nombre.length <= 0}
+                                    disabled={tipoEquipo?.nombre.length <= 0}
                                     data-bs-dismiss="modal"
                                 >
                                     Enviar

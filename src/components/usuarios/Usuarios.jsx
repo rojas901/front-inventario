@@ -168,7 +168,7 @@ export default function Usuarios() {
                                 <button
                                     type="submit"
                                     className="btn btn-primary"
-                                    disabled={usuario.nombre.length <= 0}
+                                    disabled={usuario?.nombre.length <= 0}
                                     data-bs-dismiss="modal"
                                 >
                                     Enviar
