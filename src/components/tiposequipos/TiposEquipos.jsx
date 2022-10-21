@@ -137,7 +137,7 @@ export default function TipoEquipos() {
                                         className="form-select"
                                         aria-label="Default select example"
                                         name="estado"
-                                        value={tipoEquipo.estado}
+                                        value={tipoEquipo?.estado}
                                         onChange={handleChange}
                                     >
                                         <option value={false}>Inactivo</option>

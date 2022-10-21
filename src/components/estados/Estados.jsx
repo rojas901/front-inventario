@@ -137,7 +137,7 @@ export default function Estados() {
                                         className="form-select"
                                         aria-label="Default select example"
                                         name="estado"
-                                        value={estado.estado}
+                                        value={estado?.estado}
                                         onChange={handleChange}
                                     >
                                         <option value={false}>Inactivo</option>

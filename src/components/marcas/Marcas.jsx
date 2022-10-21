@@ -137,7 +137,7 @@ export default function Marcas() {
                                         className="form-select"
                                         aria-label="Default select example"
                                         name="estado"
-                                        value={marca.estado}
+                                        value={marca?.estado}
                                         onChange={handleChange}
                                     >
                                         <option value={false}>Inactivo</option>

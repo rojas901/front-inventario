@@ -143,14 +143,14 @@ export default function Usuarios() {
                                         className="form-control"
                                         id="recipient-email"
                                         onChange={handleChange}
-                                        value={usuario.email}
+                                        value={usuario?.email}
                                         name="email"
                                     />
                                     <select
                                         className="form-select"
                                         aria-label="Default select example"
                                         name="estado"
-                                        value={usuario.estado}
+                                        value={usuario?.estado}
                                         onChange={handleChange}
                                     >
                                         <option value={false}>Inactivo</option>

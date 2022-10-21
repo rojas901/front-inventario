@@ -170,7 +170,7 @@ export default function TipoEquipos() {
                                         className="form-control"
                                         id="recipient-name"
                                         onChange={handleChange}
-                                        value={inventario.serial}
+                                        value={inventario?.serial}
                                         name="serial"
                                     />
                                     <label htmlFor="recipient-modelo" className="col-form-label">Modelo:</label>
@@ -179,7 +179,7 @@ export default function TipoEquipos() {
                                         className="form-control"
                                         id="recipient-modelo"
                                         onChange={handleChange}
-                                        value={inventario.modelo}
+                                        value={inventario?.modelo}
                                         name="modelo"
                                     />
                                     <label htmlFor="recipient-descripcion" className="col-form-label">Descripcion:</label>
@@ -188,7 +188,7 @@ export default function TipoEquipos() {
                                         className="form-control"
                                         id="recipient-descripcion"
                                         onChange={handleChange}
-                                        value={inventario.descripcion}
+                                        value={inventario?.descripcion}
                                         name="descripcion"
                                     />
                                     <label htmlFor="recipient-color" className="col-form-label">Color:</label>
@@ -197,7 +197,7 @@ export default function TipoEquipos() {
                                         className="form-control"
                                         id="recipient-color"
                                         onChange={handleChange}
-                                        value={inventario.color}
+                                        value={inventario?.color}
                                         name="color"
                                     />
                                     <label htmlFor="recipient-fechaCompra" className="col-form-label">Fecha de compra:</label>
@@ -206,7 +206,7 @@ export default function TipoEquipos() {
                                         className="form-control"
                                         id="recipient-fechaCompra"
                                         onChange={handleChange}
-                                        value={inventario.fechaCompra.slice(0,9)}
+                                        value={inventario?.fechaCompra.slice(0,9)}
                                         name="fechaCompra"
                                     />
                                     <label htmlFor="recipient-precio" className="col-form-label">Precio:</label>
@@ -215,7 +215,7 @@ export default function TipoEquipos() {
                                         className="form-control"
                                         id="recipient-precio"
                                         onChange={handleChange}
-                                        value={inventario.precio}
+                                        value={inventario?.precio}
                                         name="precio"
                                     />
                                 </div>
