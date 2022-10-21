@@ -130,7 +130,7 @@ export default function Marcas() {
                                         className="form-control"
                                         id="recipient-name"
                                         onChange={handleChange}
-                                        value={marca.nombre}
+                                        value={marca?.nombre}
                                         name="nombre"
                                     />
                                     <select

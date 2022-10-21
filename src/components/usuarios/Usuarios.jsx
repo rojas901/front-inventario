@@ -134,7 +134,7 @@ export default function Usuarios() {
                                         className="form-control"
                                         id="recipient-name"
                                         onChange={handleChange}
-                                        value={usuario.nombre}
+                                        value={usuario?.nombre}
                                         name="nombre"
                                     />
                                     <label htmlFor="recipient-email" className="col-form-label">Email:</label>

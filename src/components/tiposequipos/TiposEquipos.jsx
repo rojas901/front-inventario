@@ -130,7 +130,7 @@ export default function TipoEquipos() {
                                         className="form-control"
                                         id="recipient-name"
                                         onChange={handleChange}
-                                        value={tipoEquipo.nombre}
+                                        value={tipoEquipo?.nombre}
                                         name="nombre"
                                     />
                                     <select

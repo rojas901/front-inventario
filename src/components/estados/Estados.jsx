@@ -130,7 +130,7 @@ export default function Estados() {
                                         className="form-control"
                                         id="recipient-name"
                                         onChange={handleChange}
-                                        value={estado.nombre}
+                                        value={estado?.nombre}
                                         name="nombre"
                                     />
                                     <select
