@@ -90,10 +90,10 @@ export default function TipoEquipos() {
         }
     }
 
-    const setTipoPorId = async (e) => {
+    const setTipoPorId = (e) => {
         console.log(e.target.id)
         const tiposFilter = tipoEquipos.filter(t => t._id === e.target.id);
-        const tipo = await tiposFilter[0];
+        const tipo = tiposFilter[0];
         console.log(tipo)
         setTipoEquipo(tipo)
     }

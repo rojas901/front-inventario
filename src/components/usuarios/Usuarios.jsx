@@ -93,10 +93,10 @@ export default function Usuarios() {
         }
     }
 
-    const setUsuarioPorId = async (e) => {
+    const setUsuarioPorId = (e) => {
         console.log(e.target.id)
         const usuariosFilter = usuarios.filter(t => t._id === e.target.id);
-        const user = await usuariosFilter[0];
+        const user = usuariosFilter[0];
         console.log(user)
         setUsuario(user)
     }

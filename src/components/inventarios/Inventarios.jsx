@@ -121,10 +121,10 @@ export default function TipoEquipos() {
         }
     }
 
-    const setInventarioPorId = async (e) => {
+    const setInventarioPorId = (e) => {
         console.log(e.target.id)
         const inventariosFilter = inventarios.filter(t => t._id === e.target.id);
-        const inv = await inventariosFilter[0];
+        const inv = inventariosFilter[0];
         console.log(inv)
         setInventario(inv)
     }
