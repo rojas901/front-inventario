@@ -90,10 +90,10 @@ export default function Marcas() {
         }
     }
 
-    const setMarcaPorId = (e) => {
+    const setMarcaPorId = async (e) => {
         console.log(e.target.id)
         const marcasFilter = marcas.filter(t => t._id === e.target.id);
-        const mark = marcasFilter[0];
+        const mark = await marcasFilter[0];
         console.log(mark)
         setMarca(mark)
     }

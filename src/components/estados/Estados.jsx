@@ -90,10 +90,10 @@ export default function Estados() {
         }
     }
 
-    const setEstadoPorId = (e) => {
+    const setEstadoPorId = async (e) => {
         console.log(e.target.id)
         const estadosFilter = estados.filter(t => t._id === e.target.id);
-        const stado = estadosFilter[0];
+        const stado = await estadosFilter[0];
         console.log(stado)
         setEstado(stado)
     }
